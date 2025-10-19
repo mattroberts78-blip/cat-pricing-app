@@ -4,8 +4,6 @@ import { connectDB } from '@/lib/db';
 import Converter from '@/models/Converter';
 import Papa from 'papaparse';
 
-export const dynamic = 'force-dynamic';
-
 export async function POST(req) {
   await connectDB();
   const form = await req.formData();
